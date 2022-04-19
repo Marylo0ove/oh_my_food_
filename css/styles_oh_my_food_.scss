@@ -153,3 +153,37 @@ $color-background-light:#EAEAEA;
             padding-right: 20px;
         }
     } 
+    /*********************** FOOTER ***************************/
+
+ .footer{
+    background-color: $color-background-dark;
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    margin-bottom: 0%;
+    div{
+        @include flex-row-center;
+    }
+    p{
+        margin: 4px 0px;
+    }
+    a{
+        color: white;
+        margin-top: 4px;
+    }
+    &__logo{
+   margin: 0%;
+   font-family: 'Shrikhand';
+   padding-top: 30px;
+   padding-bottom: 10px;
+}
+   &__icon{
+       padding-right: 10px;
+       font-size: 13px;
+   }
+   &__icon2{
+       padding-right: 8px;
+       font-size: 11px;
+   }
+
+}

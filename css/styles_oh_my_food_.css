@@ -144,4 +144,39 @@ body a {
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 20px;
+}
+
+/*********************** FOOTER ***************************/
+.footer {
+  background-color: #353535;
+  color: white;
+  padding-left: 20px;
+  padding-bottom: 25px;
+  margin-bottom: 0%;
+}
+.footer div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer p {
+  margin: 4px 0px;
+}
+.footer a {
+  color: white;
+  margin-top: 4px;
+}
+.footer__logo {
+  margin: 0%;
+  font-family: "Shrikhand";
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.footer__icon {
+  padding-right: 10px;
+  font-size: 13px;
+}
+.footer__icon2 {
+  padding-right: 8px;
+  font-size: 11px;
 }/*# sourceMappingURL=styles_oh_my_food_.css.map */
