@@ -10,6 +10,7 @@
 }
 body {
   font-family: "Roboto";
+  margin: 0%;
 }
 body a {
   text-decoration: none;
@@ -27,8 +28,10 @@ body a {
 }
 
 .localisation {
+  width: 100%;
   background-color: #EAEAEA;
   color: black;
+  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -43,7 +46,7 @@ body a {
 
 /*********************** DESCRIPTION ***************************/
 .description {
-  background-color: #EAEAEA;
+  background-color: #f4f4f4;
   text-align: center;
   margin-top: 0px;
   padding-top: 20px;
@@ -55,11 +58,17 @@ body a {
 }
 
 .btn {
-  background-color: #FF79DA;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 50px;
+  border: none;
   margin-top: 15px;
   padding: 15px 20px;
   color: white;
+}
+.btn:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
 }
 
 /*********************** FONCTIONNEMENT ***************************/
@@ -78,7 +87,7 @@ body a {
   flex-direction: row;
   align-items: center;
   border-radius: 20px;
-  background-color: #EAEAEA;
+  background-color: #f4f4f4;
   padding: 10px 15px 10px 0px;
   margin-top: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -87,11 +96,13 @@ body a {
 }
 .fcard__num {
   color: white;
+  font-size: small;
   background-color: #9356DC;
   height: 20px;
   width: 20px;
   border-radius: 10px;
-  padding-left: 5px;
+  padding-left: 6px;
+  padding-top: 2px;
   margin-right: 20px;
   position: relative;
   right: 10px;
@@ -100,10 +111,16 @@ body a {
   color: #7E7E7E;
   margin-right: 20px;
 }
+.fcard:hover {
+  background-color: #f5edff;
+}
+.fcard:hover > .fcard__icon {
+  color: #9356DC;
+}
 
 /*********************** RESTAURANTS ***************************/
 .restaurants {
-  background-color: #EAEAEA;
+  background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
 }
@@ -115,6 +132,17 @@ body a {
   margin-left: 1%;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.card__nouveau {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 15px;
+  background-color: #99E2D0;
+  color: #2b987d;
+  padding: 2% 4%;
+  border-radius: 2px;
 }
 .card__img {
   height: 70%;
@@ -125,6 +153,10 @@ body a {
 }
 .card__icon {
   font-size: 25px;
+}
+.card__icon:hover {
+  cursor: pointer;
+  background: -webkit-gradient(linear, right bottom, right top, from(#FF79DA), to(#9356dc));
 }
 .card p {
   margin: 0%;
@@ -145,10 +177,13 @@ body a {
   padding-left: 10px;
   padding-right: 20px;
 }
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
 
 /*********************** FOOTER ***************************/
 .footer {
-  background-color: #353535;
+  background-color: #484747;
   color: white;
   padding-left: 20px;
   padding-bottom: 25px;
@@ -160,7 +195,7 @@ body a {
   align-items: center;
 }
 .footer p {
-  margin: 4px 0px;
+  margin: 0px 0px 8px 0px;
 }
 .footer a {
   color: white;
