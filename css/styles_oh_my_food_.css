@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto" "Shrikhand";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap");
+}
+body {
+  font-family: "Roboto";
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+
+/*********************** LE HEADER ***************************/
+.logo {
+  display: block;
+  background-color: white;
+  margin: auto;
+  width: 45%;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.localisation {
+  background-color: #EAEAEA;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.localisation__icon {
+  padding-right: 15px;
+}
+.localisation__text {
+  font-weight: bold;
+}/*# sourceMappingURL=styles_oh_my_food_.css.map */
