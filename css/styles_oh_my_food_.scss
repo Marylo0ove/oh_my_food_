@@ -1,0 +1,29 @@
+*
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Roboto' 'Shrikhand';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap')
+}
+body{
+    font-family: 'Roboto';
+    a{
+        text-decoration: none;    
+        color: black;
+    }
+}
+$color-primary:#9356DC;
+$color-secondary:#FF79DA;
+$color-tertiary:#99E2D0;
+$color-font-light :#7E7E7E;
+$color-background-dark:#353535;
+$color-background-light:#EAEAEA;
+
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
