@@ -41,6 +41,27 @@ body a {
   font-weight: bold;
 }
 
+/*********************** DESCRIPTION ***************************/
+.description {
+  background-color: #EAEAEA;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.description p {
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.btn {
+  background-color: #FF79DA;
+  border-radius: 50px;
+  margin-top: 15px;
+  padding: 15px 20px;
+  color: white;
+}
+
 /*********************** FONCTIONNEMENT ***************************/
 .section__titre {
   padding-left: 20px;
