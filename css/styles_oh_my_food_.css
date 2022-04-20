@@ -127,11 +127,11 @@ body a {
 
 .card {
   background-color: white;
-  height: 250px;
   border-radius: 15px;
   margin-left: 1%;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 250px;
   position: relative;
 }
 .card__nouveau {

@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Roboto" "Shrikhand";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap");
+}
 .logo {
   position: relative;
 }
@@ -6,4 +10,44 @@
   position: absolute;
   left: 8%;
   top: 5%;
+}
+
+.photo {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.photo__position {
+  background-color: #EAEAEA;
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Shrikhand";
+  font-size: 18px;
+}
+.name__icon {
+  font-size: 30px;
+  padding-right: 5%;
+}
+
+.card {
+  height: 70px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.card div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=menu.css.map */

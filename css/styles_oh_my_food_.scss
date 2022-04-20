@@ -33,6 +33,14 @@ $color-background-lighter: #f4f4f4;
     flex-direction: row;
     align-items: center;   
 }
+
+@mixin card{
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 1%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+}
 /*********************** LE HEADER ***************************/
 
 .logo{
@@ -142,12 +150,8 @@ $color-background-lighter: #f4f4f4;
 
 }
 .card{
-        background-color: white;
+    @include card;    
         height: 250px;
-        border-radius: 15px;
-        margin-left: 1%;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         position: relative;
         &__nouveau{
             position: absolute;
