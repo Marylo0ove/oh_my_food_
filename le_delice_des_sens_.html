@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/863613e1a1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles_oh_my_food_.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)" href="css/tablettes.css" />
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/smartphones.css" />
     <title>Le délice des sens</title>
@@ -17,8 +18,8 @@
 
     <!--_________________________ LE HEADER______________________________-->
     <header>
-        <i class="fa-solid fa-arrow-left"></i>
-        <div><img src="Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo"/></div>
+        <div><img src="Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo" class="logo"/></div>
+        <div class="logo__return"><a href="oh_my_food_.html"><i class="fa-solid fa-arrow-left"></i></div></a>
     </header>
 
     <main>
@@ -103,14 +104,16 @@
         </section>
         <input type="submit" value="Commander">
     </main>
-    <footer>
-        <img src="Maquettes Ohmyfood/images/logo/ohmyfood.png"/>
+    <!--_________________________ LE FOOTER______________________________-->
+
+    <footer class="footer">
+        <p class="footer__logo">ohmyfood</p>
         <div>
-            <i class="fa-solid fa-utensils"></i>
+            <i class="fa-solid fa-utensils footer__icon"></i>
             <p>Proposer un restaurant</p>
         </div>
         <div>
-            <i class="fa-solid fa-handshake-angle"></i>
+            <i class="fa-solid fa-handshake-angle footer__icon2"></i>
             <p>Devenir partenaire</p>
         </div>
         <p>Mentions légales</p>

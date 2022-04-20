@@ -1,0 +1,9 @@
+.logo {
+  position: relative;
+}
+.logo__return {
+  font-size: 25px;
+  position: absolute;
+  left: 8%;
+  top: 5%;
+}/*# sourceMappingURL=menu.css.map */
