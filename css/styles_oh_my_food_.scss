@@ -25,7 +25,7 @@ $color-tertiary:#99E2D0;
 $color-tertiary-dark: darken($color-tertiary, 36%);
 $color-font-light :#7E7E7E;
 $color-background-dark:#484747;
-$color-background-light:#EAEAEA;
+$color-background-light:rgb(234, 234, 234);
 $color-background-lighter: #f4f4f4;
 
 @mixin flex-row-center {
@@ -45,6 +45,12 @@ $color-background-lighter: #f4f4f4;
 .f-w-lighter{
     font-weight: lighter;
 }
+
+.icon{
+    position: relative;
+  }
+  
+ 
 /*********************** LE HEADER ***************************/
 
 .logo{
@@ -82,11 +88,31 @@ $color-background-lighter: #f4f4f4;
     margin-top: 0px;
     padding-top: 20px;
     padding-bottom: 50px;
+    position: relative;
     p{
         font-weight: lighter;
         font-size: 18px;
     }
 }
+
+@keyframes loading-spinner{
+    0%{opacity: 1;}
+    50%{opacity:1;}
+    100%{opacity: 0;}
+  }
+  
+  .loading{
+    animation: loading-spinner 3000ms;
+    animation-fill-mode: both;
+  }
+  
+  .fa-spinner{
+    color: $color-tertiary;
+    font-size: 100px;
+    position : absolute;
+    right: 40%;
+    top: 10%;
+  }
 .btn{
     background: linear-gradient(to bottom right, $color-secondary,$color-primary);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -176,10 +202,7 @@ $color-background-lighter: #f4f4f4;
         }
         &__icon{
             font-size: 25px;
-            &:hover{
-                cursor: pointer;
-                background: -webkit-gradient(linear, right bottom, right top, from(#FF79DA), to(#9356dc));
-            }   
+            -webkit-text-fill-color: black;   
         }
         p{
             margin: 0%;
@@ -200,8 +223,14 @@ $color-background-lighter: #f4f4f4;
         &:hover {
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
         } 
-    } 
-
+}
+.fa-heart:hover{
+    cursor: pointer;
+    font-weight: 600;
+    background: -webkit-gradient(linear, right bottom, right top, from($color-secondary), to($color-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
     /*********************** FOOTER ***************************/
 

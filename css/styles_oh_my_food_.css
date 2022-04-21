@@ -21,6 +21,10 @@ body a {
   font-weight: lighter;
 }
 
+.icon {
+  position: relative;
+}
+
 /*********************** LE HEADER ***************************/
 .logo {
   display: block;
@@ -33,7 +37,7 @@ body a {
 
 .localisation {
   width: 100%;
-  background-color: #EAEAEA;
+  background-color: rgb(234, 234, 234);
   color: black;
   box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -55,10 +59,49 @@ body a {
   margin-top: 0px;
   padding-top: 20px;
   padding-bottom: 50px;
+  position: relative;
 }
 .description p {
   font-weight: lighter;
   font-size: 18px;
+}
+
+@-webkit-keyframes loading-spinner {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loading-spinner {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.loading {
+  -webkit-animation: loading-spinner 3000ms;
+          animation: loading-spinner 3000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.fa-spinner {
+  color: #99E2D0;
+  font-size: 100px;
+  position: absolute;
+  right: 40%;
+  top: 10%;
 }
 
 .btn {
@@ -158,10 +201,7 @@ body a {
 }
 .card__icon {
   font-size: 25px;
-}
-.card__icon:hover {
-  cursor: pointer;
-  background: -webkit-gradient(linear, right bottom, right top, from(#FF79DA), to(#9356dc));
+  -webkit-text-fill-color: black;
 }
 .card p {
   margin: 0%;
@@ -183,6 +223,14 @@ body a {
 }
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.fa-heart:hover {
+  cursor: pointer;
+  font-weight: 600;
+  background: -webkit-gradient(linear, right bottom, right top, from(#FF79DA), to(#9356DC));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*********************** FOOTER ***************************/
