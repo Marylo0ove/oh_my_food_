@@ -17,6 +17,10 @@ body a {
   color: black;
 }
 
+.f-w-lighter {
+  font-weight: lighter;
+}
+
 /*********************** LE HEADER ***************************/
 .logo {
   display: block;
@@ -67,6 +71,7 @@ body a {
   color: white;
 }
 .btn:hover {
+  cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   background: linear-gradient(to bottom right, #ff93e1, #a16be0);
 }
@@ -160,7 +165,6 @@ body a {
 }
 .card p {
   margin: 0%;
-  font-weight: lighter;
   font-size: 16px;
 }
 .card h3 {

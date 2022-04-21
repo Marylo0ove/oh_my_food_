@@ -41,6 +41,10 @@ $color-background-lighter: #f4f4f4;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
 }
+
+.f-w-lighter{
+    font-weight: lighter;
+}
 /*********************** LE HEADER ***************************/
 
 .logo{
@@ -92,6 +96,7 @@ $color-background-lighter: #f4f4f4;
     padding: 15px 20px;
     color: white;
     &:hover{
+        cursor: pointer;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
         background: linear-gradient(to bottom right, $color-secondary-light,$color-primary-light);
     }
@@ -178,7 +183,6 @@ $color-background-lighter: #f4f4f4;
         }
         p{
             margin: 0%;
-            font-weight:lighter;
             font-size: 16px;
         }
         h3{

@@ -1,5 +1,6 @@
 $color-background-lighter: #f4f4f4;
 $color-background-light:#EAEAEA;
+$color-tertiary:#99E2D0;
 
 @font-face {
     font-family: 'Roboto' 'Shrikhand';
@@ -11,6 +12,22 @@ $color-background-light:#EAEAEA;
     flex-direction: row;
     align-items: center;   
 }
+
+
+.bold{
+    font-weight: bolder;
+}
+
+.background-light{
+    background-color: $color-background-light;
+}
+.background-white{
+    background-color: white;
+}
+.background-lighter{
+    background-color: $color-background-lighter;
+}
+
 
 .logo{
     position: relative;
@@ -28,7 +45,7 @@ $color-background-light:#EAEAEA;
     object-fit: cover; 
     position: relative;
     &__position {
-        background-color: $color-background-light;
+        background-color: $color-background-lighter;
         width: 100%;
         position: absolute;
         top: 45%;
@@ -55,4 +72,25 @@ $color-background-light:#EAEAEA;
         @include flex-row-center;
     justify-content: space-between;
     }
+}
+
+.epd{
+    font-weight:lighter;
+    font-size: 17px;
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+.border{
+    padding-bottom: 1%;
+    border-bottom: 3px solid $color-tertiary;
+}
+
+.btn-menu{
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 17px;
 }

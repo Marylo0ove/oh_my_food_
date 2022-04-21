@@ -2,6 +2,22 @@
   font-family: "Roboto" "Shrikhand";
   src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap");
 }
+.bold {
+  font-weight: bolder;
+}
+
+.background-light {
+  background-color: #EAEAEA;
+}
+
+.background-white {
+  background-color: white;
+}
+
+.background-lighter {
+  background-color: #f4f4f4;
+}
+
 .logo {
   position: relative;
 }
@@ -20,7 +36,7 @@
   position: relative;
 }
 .photo__position {
-  background-color: #EAEAEA;
+  background-color: #f4f4f4;
   width: 100%;
   position: absolute;
   top: 45%;
@@ -50,4 +66,26 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.epd {
+  font-weight: lighter;
+  font-size: 17px;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+.border {
+  padding-bottom: 1%;
+  border-bottom: 3px solid #99E2D0;
+}
+
+.btn-menu {
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 17px;
 }/*# sourceMappingURL=menu.css.map */
