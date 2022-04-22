@@ -90,8 +90,8 @@ body a {
   }
 }
 .loading {
-  -webkit-animation: loading-spinner 3000ms;
-          animation: loading-spinner 3000ms;
+  -webkit-animation: loading-spinner 2000ms;
+          animation: loading-spinner 2000ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -225,12 +225,33 @@ body a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
 
+@-webkit-keyframes like {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes like {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .fa-heart:hover {
   cursor: pointer;
   font-weight: 600;
   background: -webkit-gradient(linear, right bottom, right top, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-animation: like 1000ms;
+          animation: like 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 /*********************** FOOTER ***************************/

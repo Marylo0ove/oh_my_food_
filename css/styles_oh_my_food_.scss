@@ -102,7 +102,7 @@ $color-background-lighter: #f4f4f4;
   }
   
   .loading{
-    animation: loading-spinner 3000ms;
+    animation: loading-spinner 2000ms;
     animation-fill-mode: both;
   }
   
@@ -224,12 +224,19 @@ $color-background-lighter: #f4f4f4;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
         } 
 }
+@keyframes like{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+
 .fa-heart:hover{
     cursor: pointer;
     font-weight: 600;
     background: -webkit-gradient(linear, right bottom, right top, from($color-secondary), to($color-primary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: like 1000ms;
+    animation-fill-mode: both;
 }
 
     /*********************** FOOTER ***************************/
