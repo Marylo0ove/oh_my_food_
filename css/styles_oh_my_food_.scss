@@ -26,7 +26,7 @@ $color-tertiary-dark: darken($color-tertiary, 36%);
 $color-font-light :#7E7E7E;
 $color-background-dark:#484747;
 $color-background-light:rgb(234, 234, 234);
-$color-background-lighter: #f4f4f4;
+$color-background-lighter: rgb(244, 244, 244);
 
 @mixin flex-row-center {
     display: flex;
@@ -97,21 +97,35 @@ $color-background-lighter: #f4f4f4;
 
 @keyframes loading-spinner{
     0%{opacity: 1;}
-    50%{opacity:1;}
-    100%{opacity: 0;}
+    60%{opacity: 0.8;}
+    70%{opacity: 0.7;}
+    80%{opacity: 0.6;}
+    90%{opacity: 0.5;}
+    95%{opacity: 0.4;}
+    98%{opacity: 0.2;}
+    100%{opacity:0;
+        visibility: hidden;}
   }
   
   .loading{
-    animation: loading-spinner 2000ms;
+    height: 345%;
+    width: 100%;
+    background-color: rgba(244,244,244,0.95);
+    animation: loading-spinner 2500ms;
     animation-fill-mode: both;
+  position : absolute;
+  top:0.1%
   }
   
+  
   .fa-spinner{
+    
     color: $color-tertiary;
     font-size: 100px;
     position : absolute;
-    right: 40%;
     top: 10%;
+    left: 50%;
+    margin-left: -50px;
   }
 .btn{
     background: linear-gradient(to bottom right, $color-secondary,$color-primary);
@@ -191,7 +205,7 @@ $color-background-lighter: #f4f4f4;
             font-size: 15px;
             background-color: $color-tertiary;
             color: $color-tertiary-dark;
-            padding: 2% 4%;
+            padding: 5px 15px;
             border-radius: 2px;
         }
         &__img{
@@ -226,6 +240,7 @@ $color-background-lighter: #f4f4f4;
 }
 @keyframes like{
     0%{opacity: 0;}
+    50%{opacity: 0.7;}
     100%{opacity: 1;}
   }
 
