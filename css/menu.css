@@ -49,14 +49,50 @@
   align-items: center;
   justify-content: space-around;
   font-family: "Shrikhand";
-  font-size: 18px;
 }
 .name__icon {
   font-size: 30px;
   padding-right: 5%;
 }
 
+@-webkit-keyframes cascade {
+  from {
+    margin-top: 40px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes cascade {
+  from {
+    margin-top: 40px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+.animation-delay1 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.animation-delay2 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
 .card {
+  -webkit-animation-name: cascade;
+          animation-name: cascade;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   height: 70px;
   padding-left: 5%;
   padding-right: 5%;

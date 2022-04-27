@@ -38,6 +38,7 @@ $color-background-lighter: rgb(244, 244, 244);
     background-color: white;
     border-radius: 15px;
     margin-left: 1%;
+    margin-right: 1%;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
 }
@@ -111,7 +112,7 @@ $color-background-lighter: rgb(244, 244, 244);
     height: 345%;
     width: 100%;
     background-color: rgba(244,244,244,0.95);
-    animation: loading-spinner 2500ms;
+    animation: loading-spinner 2000ms;
     animation-fill-mode: both;
   position : absolute;
   top:0.1%
@@ -123,6 +124,7 @@ $color-background-lighter: rgb(244, 244, 244);
     color: $color-tertiary;
     font-size: 100px;
     position : absolute;
+    position: fixed;
     top: 10%;
     left: 50%;
     margin-left: -50px;

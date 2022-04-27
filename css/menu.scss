@@ -57,17 +57,33 @@ $color-tertiary:#99E2D0;
     @include flex-row-center;
     justify-content: space-around;
     font-family: 'Shrikhand';
-    font-size: 18px;
+    
     &__icon{
         font-size: 30px;
         padding-right: 5%;
     }
 }
 
+@keyframes cascade{
+    from{margin-top: 40px;
+        opacity: 0;}
+    to{margin-top: 0;
+    opacity: 1;}
+}
+.animation-delay1{
+    animation-delay: 200ms;
+}
+.animation-delay2{
+    animation-delay: 400ms;
+}
 .card{
+    animation-name: cascade;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
     height: 70px;
     padding-left: 5%;
     padding-right: 5%;
+    
     div{
         @include flex-row-center;
     justify-content: space-between;
