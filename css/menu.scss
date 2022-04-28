@@ -13,9 +13,16 @@ $color-tertiary:#99E2D0;
     align-items: center;   
 }
 
+@mixin ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 .bold{
     font-weight: bolder;
+    padding-right: 5%;
 }
 
 .background-light{
@@ -76,20 +83,56 @@ $color-tertiary:#99E2D0;
 .animation-delay2{
     animation-delay: 400ms;
 }
+.animation-delay3{
+    animation-delay: 600ms;
+}
+
 .card{
     animation-name: cascade;
     animation-duration: 3s;
     animation-fill-mode: backwards;
     height: 70px;
     padding-left: 5%;
-    padding-right: 5%;
     
     div{
         @include flex-row-center;
     justify-content: space-between;
     }
+    &:hover{
+    cursor: pointer;
+    >.check{
+        transform: translate(-70px, 0);
+        >.fa-check{
+            transform: rotate(360deg);
+        }
+        
+    }
 }
+}
+.check{
+    display: none;
+    float: right;
+    background-color: #99E2D0;
+    width: 70px;
+    height: 70px;
+    border-radius: 0px 15px 15px 0px;
+    transition: transform 330ms ease-in-out;
+    position: absolute;
+    right: -70px;
 
+  }
+.fa-check{
+    position: absolute;
+    top: 0px;
+    color: #99E2D0;
+    margin-top: 20px;
+    margin-left: 20px;
+   padding : 5px 7px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 330ms ease-in-out;
+}
 .epd{
     font-weight:lighter;
     font-size: 17px;

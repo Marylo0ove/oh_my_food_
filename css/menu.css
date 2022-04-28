@@ -4,6 +4,7 @@
 }
 .bold {
   font-weight: bolder;
+  padding-right: 5%;
 }
 
 .background-light {
@@ -86,6 +87,11 @@
           animation-delay: 400ms;
 }
 
+.animation-delay3 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
 .card {
   -webkit-animation-name: cascade;
           animation-name: cascade;
@@ -95,13 +101,46 @@
           animation-fill-mode: backwards;
   height: 70px;
   padding-left: 5%;
-  padding-right: 5%;
 }
 .card div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card:hover > .check {
+  transform: translate(-70px, 0);
+}
+.card:hover > .check > .fa-check {
+  transform: rotate(360deg);
+}
+
+.check {
+  display: none;
+  float: right;
+  background-color: #99E2D0;
+  width: 70px;
+  height: 70px;
+  border-radius: 0px 15px 15px 0px;
+  transition: transform 330ms ease-in-out;
+  position: absolute;
+  right: -70px;
+}
+
+.fa-check {
+  position: absolute;
+  top: 0px;
+  color: #99E2D0;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 5px 7px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: white;
+  transition: transform 330ms ease-in-out;
 }
 
 .epd {
