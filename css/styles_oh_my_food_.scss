@@ -11,6 +11,8 @@
 body{
     font-family: 'Roboto';
     margin: 0%;
+    z-index: 1;
+    position: relative;
     a{
         text-decoration: none;    
         color: black;
@@ -109,23 +111,22 @@ $color-background-lighter: rgb(244, 244, 244);
   }
   
   .loading{
-    height: 345%;
-    width: 100%;
+    inset: 0;
     background-color: rgba(244,244,244,0.95);
     animation: loading-spinner 2000ms;
     animation-fill-mode: both;
   position : absolute;
-  top:0.1%
+  top:0.1%;
+  z-index: 2;
   }
   
   
   .fa-spinner{
-    
     color: $color-tertiary;
     font-size: 100px;
     position : absolute;
     position: fixed;
-    top: 10%;
+    top: 20%;
     left: 50%;
     margin-left: -50px;
   }
