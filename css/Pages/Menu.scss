@@ -12,7 +12,8 @@
 .bold{
     font-weight: bolder;
     padding-right: 5%;
-    transition: transform 330ms ease-in-out;
+    transition: transform 280ms ease-in-out 50ms;
+    
 }
 .logo{
     position: relative;
@@ -80,6 +81,6 @@
     }
 }
     &:hover .bold{
-        transform: translate(-65px, 0); 
+        transform: translate(-65px, 0);
     }
 }
