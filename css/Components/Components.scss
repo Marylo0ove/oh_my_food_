@@ -1,0 +1,111 @@
+@import "../Utils/Utils.scss";
+/******************BOUTON FOND GRADIENT COULEURS***************************/
+.btn{
+    background: linear-gradient(to bottom right, $color-secondary,$color-primary);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 50px;
+    border: none;
+    margin-top: 15px;
+    padding: 15px 20px;
+    color: white;
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        background: linear-gradient(to bottom right, $color-secondary-light,$color-primary-light);
+    }
+}
+.btn-menu{
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 17px;
+}
+/******************COEUR ANIME*******************/
+@keyframes like{
+    0%{opacity: 0;}
+    50%{opacity: 0.7;}
+    100%{opacity: 1;}
+  }
+.fa-heart:hover{
+    cursor: pointer;
+    font-weight: 600;
+    background: -webkit-gradient(linear, right bottom, right top, from($color-secondary), to($color-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: like 1000ms;
+    animation-fill-mode: both;
+}
+/******************PRE LOADER*******************/
+@keyframes loading-spinner{
+    0%{opacity: 1;}
+    60%{opacity: 0.8;}
+    70%{opacity: 0.7;}
+    80%{opacity: 0.6;}
+    90%{opacity: 0.5;}
+    95%{opacity: 0.4;}
+    98%{opacity: 0.2;}
+    100%{opacity:0;
+        visibility: hidden;}
+  }
+  .loading{
+    inset: 0;
+    background-color: rgba(244,244,244,0.95);
+    animation: loading-spinner 2000ms;
+    animation-fill-mode: both;
+  position : absolute;
+  top:0.1%;
+  z-index: 2;
+  }
+  .fa-spinner{
+    color: $color-tertiary;
+    font-size: 100px;
+    position : absolute;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    margin-left: -50px;
+  }
+/******************ANIMATION CASCADE*******************/
+@keyframes cascade{
+    from{margin-top: 40px;
+        opacity: 0;}
+    to{margin-top: 0;
+    opacity: 1;}
+}
+.animation-delay1{
+    animation-delay: 200ms;
+}
+.animation-delay2{
+    animation-delay: 400ms;
+}
+.animation-delay3{
+    animation-delay: 600ms;
+}
+/******************COCHE VERTE*******************/
+.check{
+    display: block;
+    background-color: #99E2D0;
+    width: 65px;
+    height: 70px;
+    border-radius: 0px 15px 15px 0px;
+    transition: transform 330ms ease-in-out;
+    position: absolute;
+    right: -70px;
+
+  }
+.fa-check{
+    position: absolute;
+    top: 0px;
+    color: #99E2D0;
+    margin-top: 25px;
+    margin-left: 20px;
+    padding : 5px 6px;
+    font-size: 10px;
+    font-weight:bolder;
+    border-radius: 10px;
+    background-color: white;
+    transition: transform 450ms ease-in-out;
+}

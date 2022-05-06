@@ -1,0 +1,166 @@
+@import "../Utils/Utils.scss";
+
+/*********************** LE HEADER ***************************/
+.logo{
+    display: block;
+    background-color: white;
+    margin: auto;
+    width: 45%;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.localisation{
+    width: 100%;
+    background-color: $color-background-light;
+    color: black;
+    box-shadow: inset 0px 3px 6px rgba(0,0,0,0.1);
+    @include flex-row-center;
+    justify-content: center;
+        &__icon{
+        padding-right: 15px;
+        }
+        &__text{
+            font-weight: bold;
+        }
+}
+/*********************** DESCRIPTION ***************************/
+.description{
+    background-color: $color-background-lighter;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    p{
+        font-weight: lighter;
+        font-size: 18px;
+    }
+}
+/*********************** FONCTIONNEMENT ***************************/
+.section__titre{
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    h2{
+        padding-bottom: 8px;
+    }
+}
+.fcard{
+    @include flex-row-center;
+    border-radius: 20px;
+    background-color: $color-background-lighter;
+    padding: 10px 15px 10px 0px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: relative;
+    left: 7px;  
+    &__num{
+        color: white;
+        font-size: small;
+        background-color: $color-primary;
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+        padding-left: 6px;
+        padding-top: 2px;
+        margin-right: 20px;
+        position: relative;
+        right: 10px;
+        }
+    &__icon{
+        color: $color-font-light;
+        margin-right: 20px;
+    }
+    &:hover {
+        background-color: $color-primary-lighter;
+        >.fcard__icon{
+        color: $color-primary;
+        }
+    } 
+ }
+/*********************** RESTAURANTS ***************************/
+.restaurants{
+    background-color: $color-background-lighter;
+    display: flex;
+    flex-direction: column;
+
+}
+              /*************CARD ACCUEIL************/
+.card{
+    @include card;    
+        height: 250px;
+        position: relative;
+        &__nouveau{
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            font-size: 15px;
+            background-color: $color-tertiary;
+            color: $color-tertiary-dark;
+            padding: 5px 15px;
+            border-radius: 2px;
+        }
+        &__img{
+            height: 70%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px 15px 0px 0px;
+        }
+        &__icon{
+            font-size: 25px;
+            -webkit-text-fill-color: black;   
+        }
+        p{
+            margin: 0%;
+            font-size: 16px;
+        }
+        h3{
+            margin: 0%;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            font-size: 18px;
+        }
+        &__text__icon{
+            @include flex-row-center;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 20px;
+        }
+        &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        } 
+}
+ /*********************** FOOTER ***************************/
+ .footer{
+    background-color: $color-background-dark;
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    margin-bottom: 0%;
+    div{
+        @include flex-row-center;
+    }
+    p{
+        margin: 0px 0px 8px 0px;
+    }
+    a{
+        color: white;
+        margin-top: 4px;
+    }
+    &__logo{
+   margin: 0%;
+   font-family: 'Shrikhand';
+   padding-top: 30px;
+   padding-bottom: 10px;
+}
+   &__icon{
+       padding-right: 10px;
+       font-size: 13px;
+   }
+   &__icon2{
+       padding-right: 8px;
+       font-size: 11px;
+   }
+}
+ 

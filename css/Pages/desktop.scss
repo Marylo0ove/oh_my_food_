@@ -1,0 +1,25 @@
+@media screen and (min-width: 992px)
+{
+.desktop__row{
+display:flex;
+flex-direction: row;
+justify-content: space-around;
+}
+.card{
+   
+width: 300px;    height: 80px;
+}
+.check{
+    height: 80px;
+}
+.fa-check{
+    top:6px;
+}
+.btn-menu{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.photo__position{
+    top: 90%;
+}
+}

@@ -1,0 +1,85 @@
+@import "../Utils/Utils.scss";
+@import "../Components/Components.scss";
+.background-light{
+    background-color: $color-background-light;
+}
+.background-white{
+    background-color: white;
+}
+.background-lighter{
+    background-color: $color-background-lighter;
+}
+.bold{
+    font-weight: bolder;
+    padding-right: 5%;
+    transition: transform 330ms ease-in-out;
+}
+.logo{
+    position: relative;
+    &__return{
+        font-size: 25px;
+        position: absolute;
+        left: 8%;
+        top: 5%;
+    }
+}
+.photo{
+    height: 300px;
+    width: 100%;
+    object-fit: cover; 
+    position: relative;
+    &__position {
+        background-color: $color-background-lighter;
+        width: 100%;
+        position: absolute;
+        top: 45%;
+        border-radius: 30px 30px 0px 0px;
+    }
+}
+.name{
+    @include flex-row-center;
+    justify-content: space-around;
+    font-family: 'Shrikhand';
+    
+    &__icon{
+        font-size: 30px;
+        padding-right: 5%;
+    }
+}
+.epd{
+    font-weight:lighter;
+    font-size: 17px;
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+.border{
+    padding-bottom: 1%;
+    border-bottom: 3px solid $color-tertiary;
+}
+.card{
+    animation-name: cascade;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+    height: 70px;
+    padding-left: 5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    div{
+        @include flex-row-center;   
+    justify-content: space-between;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+    &:hover{
+    cursor: pointer; 
+        >.check{
+        transform: translate(-65px, 0);
+            >.fa-check{
+            transform: rotate(360deg);    
+        }   
+    }
+}
+    &:hover .bold{
+        transform: translate(-65px, 0); 
+    }
+}

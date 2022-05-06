@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: "Robot" "Shrikhand";
+  font-family: "Robot";
   src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap");
 }
 body {
@@ -23,51 +23,68 @@ body a {
   font-weight: lighter;
 }
 
-.icon {
-  position: relative;
+/******************BOUTON FOND GRADIENT COULEURS***************************/
+.btn {
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  border: none;
+  margin-top: 15px;
+  padding: 15px 20px;
+  color: white;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
 }
 
-/*********************** LE HEADER ***************************/
-.logo {
+.btn-menu {
   display: block;
-  background-color: white;
   margin: auto;
-  width: 45%;
-  padding-top: 30px;
-  padding-bottom: 15px;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 17px;
 }
 
-.localisation {
-  width: 100%;
-  background-color: rgb(234, 234, 234);
-  color: black;
-  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+/******************COEUR ANIME*******************/
+@-webkit-keyframes like {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.localisation__icon {
-  padding-right: 15px;
+@keyframes like {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.localisation__text {
-  font-weight: bold;
+.fa-heart:hover {
+  cursor: pointer;
+  font-weight: 600;
+  background: -webkit-gradient(linear, right bottom, right top, from(#FF79DA), to(#9356DC));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: like 1000ms;
+          animation: like 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
-/*********************** DESCRIPTION ***************************/
-.description {
-  background-color: rgb(244, 244, 244);
-  text-align: center;
-  margin-top: 0px;
-  padding-top: 20px;
-  padding-bottom: 50px;
-  position: relative;
-}
-.description p {
-  font-weight: lighter;
-  font-size: 18px;
-}
-
+/******************PRE LOADER*******************/
 @-webkit-keyframes loading-spinner {
   0% {
     opacity: 1;
@@ -95,7 +112,6 @@ body a {
     visibility: hidden;
   }
 }
-
 @keyframes loading-spinner {
   0% {
     opacity: 1;
@@ -145,19 +161,107 @@ body a {
   margin-left: -50px;
 }
 
-.btn {
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 50px;
-  border: none;
-  margin-top: 15px;
-  padding: 15px 20px;
-  color: white;
+/******************ANIMATION CASCADE*******************/
+@-webkit-keyframes cascade {
+  from {
+    margin-top: 40px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
 }
-.btn:hover {
-  cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
+@keyframes cascade {
+  from {
+    margin-top: 40px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+.animation-delay1 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.animation-delay2 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.animation-delay3 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+/******************COCHE VERTE*******************/
+.check {
+  display: block;
+  background-color: #99E2D0;
+  width: 65px;
+  height: 70px;
+  border-radius: 0px 15px 15px 0px;
+  transition: transform 330ms ease-in-out;
+  position: absolute;
+  right: -70px;
+}
+
+.fa-check {
+  position: absolute;
+  top: 0px;
+  color: #99E2D0;
+  margin-top: 25px;
+  margin-left: 20px;
+  padding: 5px 6px;
+  font-size: 10px;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: white;
+  transition: transform 450ms ease-in-out;
+}
+
+/*********************** LE HEADER ***************************/
+.logo {
+  display: block;
+  background-color: white;
+  margin: auto;
+  width: 45%;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.localisation {
+  width: 100%;
+  background-color: rgb(234, 234, 234);
+  color: black;
+  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.localisation__icon {
+  padding-right: 15px;
+}
+.localisation__text {
+  font-weight: bold;
+}
+
+/*********************** DESCRIPTION ***************************/
+.description {
+  background-color: rgb(244, 244, 244);
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  position: relative;
+}
+.description p {
+  font-weight: lighter;
+  font-size: 18px;
 }
 
 /*********************** FONCTIONNEMENT ***************************/
@@ -214,6 +318,7 @@ body a {
   flex-direction: column;
 }
 
+/*************CARD ACCUEIL************/
 .card {
   background-color: white;
   border-radius: 15px;
@@ -265,41 +370,6 @@ body a {
 }
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-}
-
-@-webkit-keyframes like {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes like {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.fa-heart:hover {
-  cursor: pointer;
-  font-weight: 600;
-  background: -webkit-gradient(linear, right bottom, right top, from(#FF79DA), to(#9356DC));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: like 1000ms;
-          animation: like 1000ms;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
 }
 
 /*********************** FOOTER ***************************/

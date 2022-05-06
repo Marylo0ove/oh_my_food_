@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/863613e1a1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles_oh_my_food_.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)" href="css/tablettes.css" />
-    <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/smartphones.css" />
+    <link rel="stylesheet" href="css/Pages/Menu.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)" href="css/Pages/tablette.css" />
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/Pages/desktop.css" />
     <title>La palette du goût</title>
 </head>
 <body class="background-lighter">
@@ -34,106 +34,108 @@
                     <i class="fa-regular fa-heart name__icon"></i>
                 </div>
 <!--    _________________________ ENTREES______________________________--> 
-                <div>
-                    <h2 class="epd"><span class="border">ENTR</span>EES</h2>
-                    <article class="card">
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <h3>Fricassée d'escargot</h3>
-                        <div>
-                            <p class="f-w-lighter">Au piment d'espelette</p>
-                            <p class="bold">25€</p>
-                        </div>
-                    </article>
-                    <article class="card animation-delay1">
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <h3>Foie gras de canard mi-cuit</h3>    
-                        <div>
-                            <p class="f-w-lighter">Et ses copeaux de truffe noire</p>
-                            <p class="bold">35€</p>
-                        </div> 
-                    </article>
-                    <article class="card animation-delay2">
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <h3>Oeuf au plat</h3>
-                        <div>
-                            <p class="f-w-lighter">Assaisonné à la truffe sur lit de caviar</p>
-                            <p class="bold">20€</p>
-                        </div>
-                    </article>
-                </div>
-<!--    _________________________ PLATS______________________________--> 
-                <div>
-                    <h2 class="epd"><span class="border">PLAT</span>S</h2>
-                    <article class="card">
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <h3>Filet de boeuf aux herbes</h3>
-                        <div>
-                            <p class="f-w-lighter">Accompagné de sa ribambelle de légumes</p>
-                            <p class="bold">40€</p>
-                        </div>
-                    </article>
-                    <article class="card animation-delay1">
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <h3>Parmentier de queue de boeuf</h3>
-                        <div>
-                            <p class="f-w-lighter">À la truffe noire sur sa purée de panais</p>
-                            <p class="bold">35€</p>
-                        </div>
-                    </article>
-                    <article class="card animation-delay2">
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <h3>Filet de turbot</h3>
-                        <div>
-                            <p class="f-w-lighter">Aux agrumes</p>
-                            <p class="bold">44€</p>
-                        </div>
-                    </article>
-                </div>
-<!--_________________________ DESSERT______________________________--> 
-                <div>
-                    <h2 class="epd"><span class="border">DESS</span>ERTS</h2>
-                    <article class="card">
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <h3>Paris-Brest</h3>
-                        <div>
-                            <p class="f-w-lighter">Revisité</p>
-                            <p class="bold">18€</p>
-                        </div>
-                    </article>
-                    <article class="card animation-delay1">
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <h3>Macaron au chocolat d'exception</h3>    
-                        <div>
-                            <p class="f-w-lighter">Et glace à la vanille de Madagascar</p>
-                            <p class="bold">22€</p>
-                        </div>
-                    </article>
-                    <article class="card animation-delay2">
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <h3>Mousse au chocolat</h3>   
-                        <div>
-                            <p class="f-w-lighter">Au piment d'Espelette et à la truffe noire</p>
-                            <p class="bold">23€</p>
-                        </div>
-                    </article>
+                <div class="desktop__row">
+                    <div>
+                        <h2 class="epd"><span class="border">ENTR</span>EES</h2>
+                        <article class="card">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h3>Fricassée d'escargot</h3>
+                            <div>
+                                <p class="f-w-lighter">Au piment d'espelette</p>
+                                <p class="bold">25€</p>
+                            </div>
+                        </article>
+                        <article class="card animation-delay1">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h3>Foie gras de canard mi-cuit</h3>    
+                            <div>
+                                <p class="f-w-lighter card__ellips">Et ses copeaux de truffe noire</p>
+                                <p class="bold">35€</p>
+                            </div> 
+                        </article>
+                        <article class="card animation-delay2">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h3>Oeuf au plat</h3>
+                            <div>
+                                <p class="f-w-lighter">Assaisonné à la truffe sur lit de caviar</p>
+                                <p class="bold">20€</p>
+                            </div>
+                        </article>
+                    </div>
+<!--    ________    _________________ PLATS______________________________--> 
+                    <div>
+                        <h2 class="epd"><span class="border">PLAT</span>S</h2>
+                        <article class="card">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h3>Filet de boeuf aux herbes</h3>
+                            <div>
+                                <p class="f-w-lighter">Accompagné de sa ribambelle de légumes</p>
+                                <p class="bold">40€</p>
+                            </div>
+                        </article>
+                        <article class="card animation-delay1">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h3>Parmentier de queue de boeuf</h3>
+                            <div>
+                                <p class="f-w-lighter">À la truffe noire sur sa purée de panais</p>
+                                <p class="bold">35€</p>
+                            </div>
+                        </article>
+                        <article class="card animation-delay2">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h3>Filet de turbot</h3>
+                            <div>
+                                <p class="f-w-lighter">Aux agrumes</p>
+                                <p class="bold">44€</p>
+                            </div>
+                        </article>
+                    </div>
+<!--____________    _____________ DESSERT______________________________--> 
+                    <div>
+                        <h2 class="epd"><span class="border">DESS</span>ERTS</h2>
+                        <article class="card">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h3>Paris-Brest</h3>
+                            <div>
+                                <p class="f-w-lighter">Revisité</p>
+                                <p class="bold">18€</p>
+                            </div>
+                        </article>
+                        <article class="card animation-delay1">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h3>Macaron au chocolat d'exception</h3>    
+                            <div>
+                                <p class="f-w-lighter">Et glace à la vanille de Madagascar</p>
+                                <p class="bold">22€</p>
+                            </div>
+                        </article>
+                        <article class="card animation-delay2">
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h3>Mousse au chocolat</h3>   
+                            <div>
+                                <p class="f-w-lighter">Au piment d'Espelette et à la truffe noire</p>
+                                <p class="bold">23€</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </section>
             <input type="submit" value="Commander" class="btn btn-menu">

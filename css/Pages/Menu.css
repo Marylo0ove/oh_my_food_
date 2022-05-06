@@ -1,0 +1,299 @@
+/******************BOUTON FOND GRADIENT COULEURS***************************/
+.btn {
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  border: none;
+  margin-top: 15px;
+  padding: 15px 20px;
+  color: white;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
+}
+
+.btn-menu {
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 17px;
+}
+
+/******************COEUR ANIME*******************/
+@-webkit-keyframes like {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes like {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fa-heart:hover {
+  cursor: pointer;
+  font-weight: 600;
+  background: -webkit-gradient(linear, right bottom, right top, from(#FF79DA), to(#9356DC));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: like 1000ms;
+          animation: like 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+/******************PRE LOADER*******************/
+@-webkit-keyframes loading-spinner {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0.4;
+  }
+  98% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes loading-spinner {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0.4;
+  }
+  98% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.loading {
+  inset: 0;
+  background-color: rgba(244, 244, 244, 0.95);
+  -webkit-animation: loading-spinner 2000ms;
+          animation: loading-spinner 2000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  position: absolute;
+  top: 0.1%;
+  z-index: 2;
+}
+
+.fa-spinner {
+  color: #99E2D0;
+  font-size: 100px;
+  position: absolute;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+/******************ANIMATION CASCADE*******************/
+@-webkit-keyframes cascade {
+  from {
+    margin-top: 40px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes cascade {
+  from {
+    margin-top: 40px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+.animation-delay1 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.animation-delay2 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.animation-delay3 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+/******************COCHE VERTE*******************/
+.check {
+  display: block;
+  background-color: #99E2D0;
+  width: 65px;
+  height: 70px;
+  border-radius: 0px 15px 15px 0px;
+  transition: transform 330ms ease-in-out;
+  position: absolute;
+  right: -70px;
+}
+
+.fa-check {
+  position: absolute;
+  top: 0px;
+  color: #99E2D0;
+  margin-top: 25px;
+  margin-left: 20px;
+  padding: 5px 6px;
+  font-size: 10px;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: white;
+  transition: transform 450ms ease-in-out;
+}
+
+.background-light {
+  background-color: rgb(234, 234, 234);
+}
+
+.background-white {
+  background-color: white;
+}
+
+.background-lighter {
+  background-color: rgb(244, 244, 244);
+}
+
+.bold {
+  font-weight: bolder;
+  padding-right: 5%;
+  transition: transform 330ms ease-in-out;
+}
+
+.logo {
+  position: relative;
+}
+.logo__return {
+  font-size: 25px;
+  position: absolute;
+  left: 8%;
+  top: 5%;
+}
+
+.photo {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.photo__position {
+  background-color: rgb(244, 244, 244);
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Shrikhand";
+}
+.name__icon {
+  font-size: 30px;
+  padding-right: 5%;
+}
+
+.epd {
+  font-weight: lighter;
+  font-size: 17px;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+.border {
+  padding-bottom: 1%;
+  border-bottom: 3px solid #99E2D0;
+}
+
+.card {
+  -webkit-animation-name: cascade;
+          animation-name: cascade;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  height: 70px;
+  padding-left: 5%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card:hover > .check {
+  transform: translate(-65px, 0);
+}
+.card:hover > .check > .fa-check {
+  transform: rotate(360deg);
+}
+.card:hover .bold {
+  transform: translate(-65px, 0);
+}/*# sourceMappingURL=Menu.css.map */
