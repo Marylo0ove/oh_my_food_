@@ -198,6 +198,39 @@
   transition: transform 450ms ease-in-out;
 }
 
+@-webkit-keyframes hover {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 68%;
+  }
+}
+
+@keyframes hover {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 68%;
+  }
+}
+@-webkit-keyframes hover-desk {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes hover-desk {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 60%;
+  }
+}
 .background-light {
   background-color: rgb(234, 234, 234);
 }
@@ -275,18 +308,25 @@
   height: 70px;
   padding-left: 5%;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 .card div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .card:hover {
   cursor: pointer;
+}
+.card:hover > .plat {
+  /*background-color: blue;*/
+  width: 75%;
+}
+.card:hover > .contenant > .plat__des {
+  width: 68%;
+  /* animation: hover 330ms ease-in-out;
+   animation-fill-mode: both;*/
+  /*background-color: purple; */
 }
 .card:hover > .check {
   transform: translate(-65px, 0);
@@ -296,4 +336,81 @@
 }
 .card:hover .bold {
   transform: translate(-65px, 0);
+}
+
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.plat {
+  /*background-color: red;*/
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.plat__des {
+  /*background-color: green;*/
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  transition: width 330ms ease-in-out;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .photo__position {
+    top: 70%;
+  }
+
+  .card {
+    width: 400px;
+  }
+
+  .desktop__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .desktop__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .desktop__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 400px;
+  }
+
+  .check {
+    height: 80px;
+  }
+
+  .fa-check {
+    top: 6px;
+  }
+
+  .btn-menu {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .photo__position {
+    top: 90%;
+  }
+
+  .desktop__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }/*# sourceMappingURL=Menu.css.map */

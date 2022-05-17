@@ -109,3 +109,11 @@
     background-color: white;
     transition: transform 450ms ease-in-out;
 }
+@keyframes hover{
+    0%{width: 100%;}
+    100%{width: 68%;}
+  }
+@keyframes hover-desk{
+    0%{width: 100%;}
+    100%{width: 60%;}
+}
