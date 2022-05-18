@@ -1,3 +1,4 @@
+/*BOUTON_COEUR_LOADER_CASCADE_COCHE*/
 /******************BOUTON FOND GRADIENT COULEURS***************************/
 .btn {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -280,6 +281,7 @@
   align-items: center;
   justify-content: space-around;
   font-family: "Shrikhand";
+  padding-left: 10px;
 }
 .name__icon {
   font-size: 30px;
@@ -319,14 +321,10 @@
   cursor: pointer;
 }
 .card:hover > .plat {
-  /*background-color: blue;*/
   width: 75%;
 }
 .card:hover > .contenant > .plat__des {
   width: 68%;
-  /* animation: hover 330ms ease-in-out;
-   animation-fill-mode: both;*/
-  /*background-color: purple; */
 }
 .card:hover > .check {
   transform: translate(-65px, 0);
@@ -344,14 +342,12 @@
 }
 
 .plat {
-  /*background-color: red;*/
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
 .plat__des {
-  /*background-color: green;*/
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;

@@ -41,7 +41,7 @@
     @include flex-row-center;
     justify-content: space-around;
     font-family: 'Shrikhand';
-    
+    padding-left: 10px;
     &__icon{
         font-size: 30px;
         padding-right: 5%;
@@ -71,15 +71,11 @@
     &:hover{
     cursor: pointer; 
     >.plat{
-        /*background-color: blue;*/
         width: 75%;  
     }
     >.contenant{
         >.plat__des{
             width: 68%;
-           /* animation: hover 330ms ease-in-out;
-            animation-fill-mode: both;*/
-        /*background-color: purple; */
     }   }  
         >.check{
         transform: translate(-65px, 0);
@@ -98,13 +94,11 @@
 }
 
 .plat{
-    /*background-color: red;*/
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 .plat__des{
-    /*background-color: green;*/
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;

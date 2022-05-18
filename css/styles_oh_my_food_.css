@@ -23,6 +23,7 @@ body a {
   font-weight: lighter;
 }
 
+/*BOUTON_COEUR_LOADER_CASCADE_COCHE*/
 /******************BOUTON FOND GRADIENT COULEURS***************************/
 .btn {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -223,6 +224,39 @@ body a {
   transition: transform 450ms ease-in-out;
 }
 
+@-webkit-keyframes hover {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 68%;
+  }
+}
+
+@keyframes hover {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 68%;
+  }
+}
+@-webkit-keyframes hover-desk {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes hover-desk {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 60%;
+  }
+}
 /*********************** LE HEADER ***************************/
 .logo {
   display: block;
@@ -401,8 +435,10 @@ body a {
 .footer__icon {
   padding-right: 10px;
   font-size: 13px;
+  padding-bottom: 10px;
 }
 .footer__icon2 {
   padding-right: 8px;
   font-size: 11px;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=styles_oh_my_food_.css.map */
